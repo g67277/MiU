@@ -1,8 +1,8 @@
 // JavaScript Document
 // Nazir Shuqair
-// VFW 1308
-// 29 Aug 2013
-// Project 4
+//	MiU 1310
+//	3 OCT 2013
+//	Project 1
 
 window.addEventListener("DOMContentLoaded", function(){
 	//alert(localStorage.value(0));
