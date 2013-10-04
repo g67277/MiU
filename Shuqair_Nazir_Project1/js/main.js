@@ -363,6 +363,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	clearD.addEventListener("click", clearLocal);
 	var add = $('submit');
 	add.addEventListener("click", validate);
+	var usaV = $('usaVideo');
+	usaV.addEventListener("click", getData);
 	
 	
 });
