@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*	CSS Document 
+	Nazir Shuqair
+	VFW 1308
+	29 Aug 2013
+	Project 4
+*/
+
+@font-face{
+	font-family:"Good Times";
+	src:(Fonts/good%20times%20rg.ttf)
+}
+
+body{
+	background-color:#FFFEFC;		
+}
+
+header{
+	background-color:#FDFFFD;
+	border:dashed;
+	border-color:#0F0;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-bottom: -20px;
+}
+
+.dynamicMakeList{
+	list-style-type:none;
+	margin-left: -50px;
+}
+
+.dynamicSubList{
+	font-family:Adobe Caslon Pro;
+	list-style-type:none;
+	padding-bottom: 5px;
+	padding-top:20px;
+	border-top-style:double;
+	border-top-color:#0F0;
+}
+
+.dynamicImg{
+	
+}
+
+.dynamicDelete{
+	margin-left: 40px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+.dynamicEdit{
+	padding-left: 5px;
+	padding-top: 5px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+
+}
+
+#pgLinks{
+	margin-top: 20px;
+}
+
+#displayD{
+	margin-left:70px;
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+}
+
+#clearD{
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+#top{
+	margin-left:200px;
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+#additem{
+	padding-left: 5px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+}
+
+h1{
+	font-family: "Good Times";
+	font-size: 45px;
+	color: #4A4A4A;
+	margin-left: 20px;
+	margin-bottom:-28px;
+}
+
+h2{
+	font-family:"Good Times";
+	font-size:30px;
+	color:#4A4A4A;
+	text-align:center;
+}
+
+p{
+	font-family:Adobe Caslon Pro;
+	text-indent:20px;
+	width: 100%;
+	text-align:center;	
+}
+
+h3{
+	font-family:Adobe Caslon Pro;
+	text-align:center;
+}
+
+#errors{
+	list-style-type:none;
+	color:#F00;
+}
+
+.lgnd{
+	text-align:center;
+	font-family:"Good Times";
+	font-size:18px;
+	color:#4A4A4A;
+}
+
+#qA{
+	list-style-type:none;
+	font-family:Adobe Caslon Pro;
+	padding-left: 20px;
+}
+
+#mainButton{
+	margin-left:50px;
+}
+
+#date{
+	list-style-type:none;
+	font-family:Adobe Caslon Pro;
+	padding-left: 20px;
+}
+
+
+a:link {text-decoration:none;
+		color:#00DE04}
+a:visited {color:#00DE04}
+
+/*#submit{
+	background-image:url(img/images/addbutton_04.png);
+}
+*/
+
+	
