@@ -16,6 +16,9 @@ body{
 }
 
 
+#about .ui-grid-b div{
+	padding:10px;
+}
 
 
 .dynamicMakeList{
@@ -30,10 +33,6 @@ body{
 	padding-top:20px;
 	border-top-style:double;
 	border-top-color:#0F0;
-}
-
-.dynamicImg{
-	
 }
 
 .dynamicDelete{
@@ -131,55 +130,11 @@ h3{
 }
 
 
-
-
-
-#searchBtn{
-	
-	
-}
-
-
-#vidTitle{
-	
-}
-
-#audTitle{
-		
-}
-
-#usaLink{
-	
-}
-
-#tmsLink{
-	
-}
-
-#usaLink2{
-	
-}
-
-#tmsLink2{
-	
-}
-
-#pgFooter{
-	
-	
-}
-
 #date{
 	list-style-type:none;
 	font-family:Adobe Caslon Pro;
 	padding-left: 20px;
 }
 
-
-
-/*#submit{
-	background-image:url(img/images/addbutton_04.png);
-}
-*/
 
 	

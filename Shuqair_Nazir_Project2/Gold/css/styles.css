@@ -63,6 +63,8 @@ body{
 	border-left-color: #0F0;
 }
 
+
+
 #clearD{
 	padding-left: 3px;
 	border-left-style:groove;
@@ -93,19 +95,19 @@ h2{
 	font-family:"Good Times";
 	font-size:30px;
 	color:#4A4A4A;
-	text-align:center;
+	
 }
 
 p{
 	font-family:Adobe Caslon Pro;
 	text-indent:20px;
 	width: 100%;
-	text-align:center;	
+		
 }
 
 h3{
 	font-family:Adobe Caslon Pro;
-	text-align:center;
+	
 }
 
 #errors{
@@ -132,6 +134,20 @@ h3{
 
 
 
+
+.currentC{
+	color:#09F;
+	font-size:14px;
+	font-weight:900;
+}
+
+.currentN{
+	color:#666;
+	font-size:14px;
+	font-weight:900;
+	text-align:center;
+	
+};
 
 
 #searchBtn{
