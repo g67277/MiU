@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/*	CSS Document 
+	Nazir Shuqair
+	MiU 1310
+	10 OCT 2013
+	Project 2
+*/
+
+@font-face{
+	font-family:"Good Times";
+	src:(Fonts/good%20times%20rg.ttf)
+}
+
+body{
+	background-color:#FFFEFC;		
+}
+
+
+
+
+.dynamicMakeList{
+	list-style-type:none;
+	margin-left: -50px;
+}
+
+.dynamicSubList{
+	font-family:Adobe Caslon Pro;
+	list-style-type:none;
+	padding-bottom: 5px;
+	padding-top:20px;
+	border-top-style:double;
+	border-top-color:#0F0;
+}
+
+.dynamicImg{
+	
+}
+
+.dynamicDelete{
+	margin-left: 40px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+.dynamicEdit{
+	padding-left: 5px;
+	padding-top: 5px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+
+}
+
+#pgLinks{
+	margin-top: 20px;
+}
+
+#displayD{
+	margin-left:70px;
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+}
+
+
+
+#clearD{
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+#top{
+	margin-left:200px;
+	padding-left: 3px;
+	border-left-style:groove;
+	border-left-color: #ff7901;
+}
+
+#additem{
+	padding-left: 5px;
+	border-left-style:groove;
+	border-left-color: #0F0;
+}
+
+h1{
+	font-family: "Good Times";
+	font-size: 70px;
+	color: #4A4A4A;
+	
+}
+
+h2{
+	font-family:"Good Times";
+	font-size:30px;
+	color:#4A4A4A;
+	
+}
+
+p{
+	font-family:Adobe Caslon Pro;
+	text-indent:20px;
+	width: 100%;
+		
+}
+
+h3{
+	font-family:Adobe Caslon Pro;
+	
+}
+
+#errors{
+	list-style-type:none;
+	color:#F00;
+}
+
+.lgnd{
+	text-align:center;
+	font-family:"Good Times";
+	font-size:18px;
+	color:#4A4A4A;
+}
+
+#qA{
+	list-style-type:none;
+	font-family:Adobe Caslon Pro;
+	padding-left: 20px;
+}
+
+#mainButton{
+	padding-left:-30px;
+}
+
+
+
+
+.currentC{
+	color:#09F;
+	font-size:14px;
+	font-weight:900;
+}
+
+.currentN{
+	color:#666;
+	font-size:14px;
+	font-weight:900;
+	text-align:center;
+	
+};
+
+
+#searchBtn{
+	
+	
+}
+
+
+#vidTitle{
+	
+}
+
+#audTitle{
+		
+}
+
+#usaLink{
+	
+}
+
+#tmsLink{
+	
+}
+
+#usaLink2{
+	
+}
+
+#tmsLink2{
+	
+}
+
+#pgFooter{
+	
+	
+}
+
+#date{
+	list-style-type:none;
+	font-family:Adobe Caslon Pro;
+	padding-left: 20px;
+}
+
+
+
+/*#submit{
+	background-image:url(img/images/addbutton_04.png);
+}
+*/
+
+	

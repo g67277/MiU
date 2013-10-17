@@ -337,6 +337,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		//Reset Error Messages
 		errMsg.innerHTML = "";
+		getDat.style.border = "1px solid black";
 		getNameM.style.border = "1px solid black";
 		getRoomN.style.border = "1px solid black";
 		getMeetingT.style.border = "1px solid black";

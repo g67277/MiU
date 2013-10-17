@@ -132,6 +132,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			item.notes		= ["Notes:", get('notes').value];
 		//Save data to local storage.  Use stringify to convert objects to strings
 		localStorage.setItem(id, JSON.stringify(item));
+		console.log(item);
 		alert("Meeting Saved!");
 	}
 	
