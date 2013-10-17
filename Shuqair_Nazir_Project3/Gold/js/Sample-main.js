@@ -11,6 +11,8 @@ $('#additem').on('pageinit', function(){
 		submitHandler: function() {
 			var data = myForm.serializeArray();
 			storeData(data);
+			//reloads page to clear fields
+			window.location.reload(true);
 		}
 });
 	
