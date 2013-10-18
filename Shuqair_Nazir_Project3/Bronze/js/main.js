@@ -1,8 +1,8 @@
 // JavaScript Document
 // Nazir Shuqair
 //	MiU 1310
-//	10 OCT 2013
-//	Project 2
+//	17 OCT 2013
+//	Project 3
 
 window.addEventListener("DOMContentLoaded", function(){
 	//alert(localStorage.value(0));
@@ -337,7 +337,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		//Reset Error Messages
 		errMsg.innerHTML = "";
-		getDat.style.border = "1px solid black";
 		getNameM.style.border = "1px solid black";
 		getRoomN.style.border = "1px solid black";
 		getMeetingT.style.border = "1px solid black";

@@ -1,8 +1,8 @@
 // JavaScript Document
 // Nazir Shuqair
 //	MiU 1310
-//	10 OCT 2013
-//	Project 2
+//	17 OCT 2013
+//	Project 3
 
 var json = {
 	"conference4": {
