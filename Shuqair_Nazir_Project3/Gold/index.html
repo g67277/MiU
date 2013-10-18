@@ -250,20 +250,22 @@
         <div data-role="content">
         	<form action="" id="vtc">
             	<div data-role="fieldcontain">
-                    <label for="meetName" >Meeting Title:</label>
+                    <label for="meetName" >* Meeting Title:</label>
                     <input type="text" name="meetName" id="meetName" class="required"/>
                 </div>
                 <div data-role="fieldcontain">
-                    <label for="pocNum">POC Number:</label>
-                    <input type="tel" name="pocNum" id="pocNum" class="required number">
+                    <label for="pocNum">* POC Number:</label>
+                    <input type="tel" name="pocNum" id="pocNum" class="required number" placeholder="1231231234">
+                    <div style="font-size:12px; color:#666; font-family:Adobe Caslon Pro"><h5>Do not include spaces or dashes between numbers</h5></div>
                 </div>
                 <div data-role="fieldcontain">
-                    <label for="roomNum">Room Number:</label>
-                    <input type="text" name="roomNum" id="roomNum">
+                    <label for="roomNum">* Room Number:</label>
+                    <input type="text" name="roomNum" id="roomNum" placeholder="1-123">
+                    <div style="font-size:12px; color:#666; font-family:Adobe Caslon Pro"><h5>Enter floor level then the 3 digit room number</h5></div>
                 </div>
                 <div data-role="fieldcontain">
-                	<label for="meetTime">Time of Meeting:</label>
-                    <input type="time" name="meetTime" id="meetTime">
+                	<label for="meetTime">* Time of Meeting:</label>
+                    <input type="time" name="meetTime" id="meetTime" class="required">
                 </div>
                  <div data-role="fieldcontain">
                 	<label for="bridge">Bridge used:</label>
@@ -287,8 +289,8 @@
                     </select>
                 </div>
             	<div data-role="fieldcontain">
-                    <label for="meetCode">Meeting Code:</label>
-                    <input type="text" name="meetCode" id="meetCode">
+                    <label for="meetCode">* Meeting Code:</label>
+                    <input type="text" name="meetCode" id="meetCode" placeholder="123456#" class="required">
                 </div>
                 <div data-role="fieldcontain">
                 	<label for="timeRange">Meeting Duration:</label>
@@ -308,8 +310,8 @@
                     <textarea></textarea>
                 </div>
                 
-                <input type="submit" data-inline="true" value="submit" data-theme="b" />
-                <input type="reset" data-inline="true" value="reset" data-theme="a" data-mini="true" />
+                <input type="submit" data-inline="true" value="submit" data-theme="e" />
+                <input type="reset" data-inline="true" value="reset" data-theme="a" data-mini="true" id="resetBtn"/>
                 
             </form>
         </div>
