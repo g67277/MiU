@@ -4,301 +4,336 @@
 	17 OCT 2013
 	Project 3-->
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta keywords= "Meeting, Conference, Schedule, VTC, BUMED, Lists, Call info" />
-		<meta discreption= "Creat a schedule of VTC calls" />
-		<meta name= "robots" content= "index, follow" />
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="cleartype" content="on">
-        
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />      
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="js/libs/modernizr.custom.min.js"></script>
-		<title>VTC Line Up</title>
-	</head>
-	<!--Body, including background color and visited link color changes-->
-	<body>
-       <div data-role="page" id="home" >
-                <div data-role="header" data-theme="e">
-                    <h1>VTC</h1>
-                </div>
-                <div data-role="content">
-                    <!--Link for additem page, CTA-->
-                    <a href="#additem"><img src="img/CTA.gif" id= "mainButton"></a>
-                    <ul data-role="listview" data-inset="true" data-filter="true">
-                        <li data-role="list-divider">Browse</li>
-                        <li data-role="list-divider">Video</li>
-                        <li>
-                            <a href="#usVid">
-                                <img src="img/USAMTIC.gif" />
-                                <h3>USAMTIC Video</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tmVid">
-                                <img src="img/tms.gif" />
-                                <h3>TMS Video</h3>
-                            </a>
-                        </li>
-                        <li data-role="list-divider">Audio</li>
-                        <li>
-                            <a href="#usAud">
-                                <img src="img/USAMTIC.gif" />
-                                <h3>USAMTIC Audio</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tmAud">
-                                <img src="img/tms.gif" />
-                                <h3>TMS Audio</h3>
-                            </a>
-                        </li>
-                     </ul>
-                </div>
-                <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                    <div data-role="navbar">
-                        <ul>
-                            <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-                            <li><a href="#about" data-icon="info">About</a></li>
-                            <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                        </ul>
-                    </div>
-                </div>
-           </div> 
-       <div data-role="page" id="about" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>About</h1>
-            </div>
-            <div data-role="content">
-                <div data-role="collapsible-set" data-filter="true">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Home</h3>
-                        <a href="index.html">Back to Home!</a>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>GIT</h3>
-                        <a href="https://github.com/g67277/MiU.git">https://github.com/g67277/MiU.git</a>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Apps Links</h3>
-                        <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Gold">Gold Link</a></div>
-                        <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Bronze">Bronze Link</a></div>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Development</h3>
-                        <p>Future development will include targeting and displaying specific meetings when selecting one of the categories</p>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>About Me</h3>
-                        <p>Nazir Shuqair</p>
-                        <p>22 years old, Work as a Desktop Support Specialiest with the navy while attending FullSail. Loving MiU!!</p>
-                    </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info" class="ui-btn-active">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-       <div data-role="page" id="current" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>Most Current</h1>
-            </div>
-            <div data-role="content" data-content-theme="a">
-            	<ul data-role="listview" data-inset="false" data-filter="true">
-                        <li>
-                             <h2>COS Reocurring</h2>
-                             <p class="currentC">Meeting Time: 06:30 -- VIP PRESENT</p>
-                             <p class="currentN">Call code: 56322# -- Notes: User needs special software</p>
-                        </li>
-                        <li>
-                             <h2>Holiday Party</h2>
-                             <p class="currentC">Meeting Time: 09:30 -- VIP PRESENT</p>
-                             <p class="currentN">Call code: 76544#</p>
-                        </li>
-                        <li>
-                             <h2>Tech Training</h2>
-                             <p class="currentC">Meeting Time: 10:30</p>
-                             <p class="currentN">Call code: 86554# -- Notes: Monitor setup</p>
-                        </li>
-                        <li>
-                             <h2>Planning</h2>
-                             <p class="currentC">Meeting Time: 11:30</p>
-                             <p class="currentN">Call code: 54226# -- Notes: Needs HDMI cable</p>
-                        </li>
-                        <li>
-                             <h2>Navy Pride</h2>
-                             <p class="currentC">Meeting Time: 13:00 -- VIP PRESENT</p>
-                             <p class="currentN">Call code: 46545#</p>
-                        </li>
-                  </ul>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh" class="ui-btn-active">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-       <div data-role="page" id="usVid" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>USAMTIC Video Bridge</h1>
-            </div>
-            <div data-role="content">
-            	<p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure video teleconferencing</p>
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Schedule a Call</h3>
-                       <div data-role="button"><a href="#additem">USAMTIC Video</a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-       <div data-role="page" id="tmVid" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>USAMTIC Video Bridge</h1>
-            </div>
-            <div data-role="content">
-            	<p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Schedule a Call</h3>
-                        <div data-role="button"><a href="#additem">TMS Video</a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-       <div data-role="page" id="usAud" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>USAMTIC Video Bridge</h1>
-            </div>
-            <div data-role="content">
-            	<p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure audio teleconferencing</p>
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Schedule a Call</h3>
-                        <div data-role="button"><a href="#additem">USAMTIC Audio</a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-       <div data-role="page" id="tmAud" data-add-back-btn="true">
-            <div data-role="header" data-theme="e">
-                <h1>USAMTIC Video Bridge</h1>
-            </div>
-            <div data-role="content">
-            	<p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
-                <div data-role="collapsible-set">
-                    <div data-role="collapsible" data-collapsed="true" data-theme="d">
-                        <h3>Schedule a Call</h3>
-                        <div data-role="button"><a href="#additem">TMS Audio</a></div>
-                    </div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul> 
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
-            </div>
-      </div>
-      <div data-role="page" id="additem" data-add-back-btn="true">
-    	<div data-role="header" data-theme="e">
-        	<h1>VTC Line-Up</h1>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta keywords="Meeting, Conference, Schedule, VTC, BUMED, Lists, Call info" />
+    <meta discreption="Creat a schedule of VTC calls" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/libs/modernizr.custom.min.js"></script>
+    <title>VTC Line Up</title>
+</head>
+<!--Body, including background color and visited link color changes-->
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-theme="e">
+            <h1>VTC</h1>
         </div>
         <div data-role="content">
-        	<form action="" id="vtc">
-            	<div data-role="fieldcontain">
-                    <label for="meetName" >* Meeting Title:</label>
-                    <input type="text" name="meetName" id="meetName" class="required"/>
+            <!--Link for additem page, CTA-->
+            <a href="#additem">
+                <img src="img/CTA.gif" id="mainButton">
+            </a>
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li data-role="list-divider">Browse</li>
+                <li data-role="list-divider">Video</li>
+                <li>
+                    <a href="#usVid">
+                        <img src="img/USAMTIC.gif" />
+                        <h3>USAMTIC Video</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tmVid">
+                        <img src="img/tms.gif" />
+                        <h3>TMS Video</h3>
+                    </a>
+                </li>
+                <li data-role="list-divider">Audio</li>
+                <li>
+                    <a href="#usAud">
+                        <img src="img/USAMTIC.gif" />
+                        <h3>USAMTIC Audio</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tmAud">
+                        <img src="img/tms.gif" />
+                        <h3>TMS Audio</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="about" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>About</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible-set" data-filter="true">
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Home</h3>
+                    <a href="index.html">Back to Home!</a>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>GIT</h3>
+                    <a href="https://github.com/g67277/MiU.git">https://github.com/g67277/MiU.git</a>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Apps Links</h3>
+                    <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Gold">Gold Link</a>
+                    </div>
+                    <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Bronze">Bronze Link</a>
+                    </div>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Development</h3>
+                    <p>Future development will include targeting and displaying specific meetings when selecting one of the categories</p>
+                </div>
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>About Me</h3>
+                    <p>Nazir Shuqair</p>
+                    <p>22 years old, Work as a Desktop Support Specialiest with the navy while attending FullSail. Loving MiU!!</p>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info" class="ui-btn-active">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="current" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>Most Current</h1>
+        </div>
+        <div data-role="content" data-content-theme="a">
+            <ul data-role="listview" data-inset="false" data-filter="true">
+                <li>
+                    <h2>COS Reocurring</h2>
+                    <p class="currentC">Meeting Time: 06:30 -- VIP PRESENT</p>
+                    <p class="currentN">Call code: 56322# -- Notes: User needs special software</p>
+                </li>
+                <li>
+                    <h2>Holiday Party</h2>
+                    <p class="currentC">Meeting Time: 09:30 -- VIP PRESENT</p>
+                    <p class="currentN">Call code: 76544#</p>
+                </li>
+                <li>
+                    <h2>Tech Training</h2>
+                    <p class="currentC">Meeting Time: 10:30</p>
+                    <p class="currentN">Call code: 86554# -- Notes: Monitor setup</p>
+                </li>
+                <li>
+                    <h2>Planning</h2>
+                    <p class="currentC">Meeting Time: 11:30</p>
+                    <p class="currentN">Call code: 54226# -- Notes: Needs HDMI cable</p>
+                </li>
+                <li>
+                    <h2>Navy Pride</h2>
+                    <p class="currentC">Meeting Time: 13:00 -- VIP PRESENT</p>
+                    <p class="currentN">Call code: 46545#</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh" class="ui-btn-active">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="usVid" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>USAMTIC Video Bridge</h1>
+        </div>
+        <div data-role="content">
+            <p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure video teleconferencing</p>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Schedule a Call</h3>
+                    <div data-role="button"><a href="#additem">USAMTIC Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="tmVid" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>USAMTIC Video Bridge</h1>
+        </div>
+        <div data-role="content">
+            <p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Schedule a Call</h3>
+                    <div data-role="button"><a href="#additem">TMS Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="usAud" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>USAMTIC Video Bridge</h1>
+        </div>
+        <div data-role="content">
+            <p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure audio teleconferencing</p>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Schedule a Call</h3>
+                    <div data-role="button"><a href="#additem">USAMTIC Audio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="tmAud" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>USAMTIC Video Bridge</h1>
+        </div>
+        <div data-role="content">
+            <p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
+            <div data-role="collapsible-set">
+                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                    <h3>Schedule a Call</h3>
+                    <div data-role="button"><a href="#additem">TMS Audio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="additem" data-add-back-btn="true">
+        <div data-role="header" data-theme="e">
+            <h1>VTC Line-Up</h1>
+        </div>
+        <div data-role="content">
+            <form action="" id="vtc">
+                <div data-role="fieldcontain">
+                    <label for="meetName">* Meeting Title:</label>
+                    <input type="text" name="meetName" id="meetName" class="required" />
                 </div>
                 <div data-role="fieldcontain">
                     <label for="pocNum">* POC Number:</label>
                     <input type="tel" name="pocNum" id="pocNum" class="required number" placeholder="1231231234">
-                    <div style="font-size:12px; color:#666; font-family:Helvetica,Arial,sans-serif"><p>Do not include spaces or dashes between numbers</p></div>
+                    <div style="font-size:12px; color:#666; font-family:Helvetica,Arial,sans-serif">
+                        <p>Do not include spaces or dashes between numbers</p>
+                    </div>
                 </div>
                 <div data-role="fieldcontain">
                     <label for="roomNum">* Room Number:</label>
                     <input type="text" name="roomNum" id="roomNum" placeholder="1-123">
-                    <div style="font-size:12px; color:#666; font-family:Helvetica,Arial,sans-serif"><p>Enter floor level then the 3 digit room number</p></div>
+                    <div style="font-size:12px; color:#666; font-family:Helvetica,Arial,sans-serif">
+                        <p>Enter floor level then the 3 digit room number</p>
+                    </div>
                 </div>
                 <div data-role="fieldcontain">
-                	<label for="meetTime">* Time of Meeting:</label>
+                    <label for="meetTime">* Time of Meeting:</label>
                     <input type="time" name="meetTime" id="meetTime" class="required">
                 </div>
-                 <div data-role="fieldcontain">
-                	<label for="bridge">Bridge used:</label>
-                    	<select name="bridge" id="bridge" data-native-menu="false">
-                        	<option data-placeholder="true">Select</option>
-                        	<optgroup label="USAMTIC">        
-                                <option value="audio">USAMTIC -- Audio</option>
-                                <option value="video">USAMTIC -- Video</option>
-                            </optgroup>
-                            <optgroup label="TMS">        
-                                <option value="audio">TMS -- Audio</option>
-                                <option value="video">TMS -- Video</option>
-                            </optgroup>
-                        </select>
+                <div data-role="fieldcontain">
+                    <label for="bridge">Bridge used:</label>
+                    <select name="bridge" id="bridge" data-native-menu="false">
+                        <option data-placeholder="true">Select</option>
+                        <optgroup label="USAMTIC">
+                            <option value="audio">USAMTIC -- Audio</option>
+                            <option value="video">USAMTIC -- Video</option>
+                        </optgroup>
+                        <optgroup label="TMS">
+                            <option value="audio">TMS -- Audio</option>
+                            <option value="video">TMS -- Video</option>
+                        </optgroup>
+                    </select>
                 </div>
-            	<div data-role="fieldcontain">
-                	<label for="vip">VIP Attending?</label>
+                <div data-role="fieldcontain">
+                    <label for="vip">VIP Attending?</label>
                     <select data-role="slider">
-                    	<option value="off">No</option>
+                        <option value="off">No</option>
                         <option value="on">Yes</option>
                     </select>
                 </div>
-            	<div data-role="fieldcontain">
+                <div data-role="fieldcontain">
                     <label for="meetCode">* Meeting Code:</label>
                     <input type="text" name="meetCode" id="meetCode" placeholder="123456#" class="required">
                 </div>
                 <div data-role="fieldcontain">
-                	<label for="timeRange">Meeting Duration:</label>
-                	<input type="range" name="timeRange" id="timeRange" value="1" min=".5" max="12"/>
+                    <label for="timeRange">Meeting Duration:</label>
+                    <input type="range" name="timeRange" id="timeRange" value="1" min=".5" max="12" />
                 </div>
                 <div data-role="fieldcontain">
-                	<fieldset data-role="controlgroup" data-type="horizontal">
-                    	<legend>Did the user respond to your call/email: </legend>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>Did the user respond to your call/email:</legend>
                         <input type="radio" value="yes" name="response" id="response1" />
                         <label for="response1">Yes</label>
                         <input type="radio" value="no" name="response" id="response2" />
@@ -306,33 +341,37 @@
                     </fieldset>
                 </div>
                 <div data-role="fieldcontain">
-                	<label for="notes">Notes:</label>
+                    <label for="notes">Notes:</label>
                     <textarea></textarea>
                 </div>
-                
+
                 <input type="submit" data-inline="true" value="submit" data-theme="e" />
-                <input type="reset" data-inline="true" value="reset" data-theme="a" data-mini="true" id="resetBtn"/>
-                
+                <input type="reset" data-inline="true" value="reset" data-theme="a" data-mini="true" id="resetBtn" />
+
             </form>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-                <div data-role="navbar">
-                    <ul> 
-                        <li><a href="#home" data-icon="home">Home</a></li>
-                        <li><a href="#about" data-icon="info">About</a></li>
-                        <li><a href="#current" data-icon="refresh">Most Current</a></li>
-                    </ul>
-                </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a>
+                    </li>
+                    <li><a href="#about" data-icon="info">About</a>
+                    </li>
+                    <li><a href="#current" data-icon="refresh">Most Current</a>
+                    </li>
+                </ul>
             </div>
+        </div>
     </div>
-                  
-            <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-			<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-            <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
-            
-            <script src="js/json.js" type="text/javascript"></script>
-   		  	<script src="js/main.js" type="text/javascript"></script>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+
+    <script src="js/json.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
     </div>
-    
-	</body>
+
+</body>
+
 </html>
