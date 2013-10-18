@@ -23,8 +23,8 @@ $('#additem').on('pageinit', function(){
 	
 	//any other code needed for addItem page goes here
 	var storeData = function(data){
-		// if no key, this is a new post, if there is a key, its an old item being edited
 		
+		//assigns id to the item
 		var id 				= Math.floor(Math.random() * 100001);
 		
 		localStorage.setItem(id, JSON.stringify(data));
