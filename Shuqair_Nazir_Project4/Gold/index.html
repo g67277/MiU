@@ -2,7 +2,7 @@
 <!--Nazir Shuqair
 	MiU 1310
 	17 OCT 2013
-	Project 3-->
+	Project 4-->
 <html>
 
 <head>
@@ -16,16 +16,17 @@
     <meta http-equiv="cleartype" content="on">
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/goldTheme.css" />
+    <!--<link rel="stylesheet" href="css/styles.css" />-->
     <script src="js/libs/modernizr.custom.min.js"></script>
     <title>VTC Line Up</title>
 </head>
 <!--Body, including background color and visited link color changes-->
 
 <body>
-    <div data-role="page" id="home">
-        <div data-role="header" data-theme="e">
-            <h1>VTC</h1>
+    <div data-role="page" id="home" data-theme="a">
+        <div data-role="header" data-theme="a">
+        	<img border="0" src="img/brand-logo.gif" class="logo" style="float:none;display:inline"/>
         </div>
         <div data-role="content">
             <!--Link for additem page, CTA-->
@@ -33,7 +34,7 @@
                 <img src="img/CTA.gif" id="mainButton">
             </a>
             <ul data-role="listview" data-inset="true" data-filter="true">
-                <li data-role="list-divider">Browse</li>
+                <li data-role="list-divider" data-theme="a">Browse</li>
                 <li data-role="list-divider">Video</li>
                 <li>
                     <a href="#usVid">
@@ -62,10 +63,10 @@
                 </li>
             </ul>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
-            <div data-role="navbar">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
+            <div data-role="navbar" data-theme="a">
                 <ul>
-                    <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a>
+                    <li><a href="#home" data-icon="home" class="ui-btn-active" >Home</a>
                     </li>
                     <li><a href="#about" data-icon="info">About</a>
                     </li>
@@ -76,38 +77,38 @@
         </div>
     </div>
     <div data-role="page" id="about" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
-            <h1>About</h1>
+        <div data-role="header" data-theme="a">
+            	<img border="0" src="img/brand-logo.gif" alt="Logo, Facebook" class="logo" style="float:none;display:inline"/>
+           <h1>About</h1>
         </div>
         <div data-role="content">
             <div data-role="collapsible-set" data-filter="true">
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Home</h3>
                     <a href="index.html">Back to Home!</a>
                 </div>
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>GIT</h3>
                     <a href="https://github.com/g67277/MiU.git">https://github.com/g67277/MiU.git</a>
                 </div>
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Apps Links</h3>
-                    <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Gold">Gold Link</a>
-                    </div>
-                    <div data-role="button"><a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Bronze">Bronze Link</a>
-                    </div>
+                    <a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Gold"><div data-role="button">Gold Link</div></a>
+                    <a href="https://github.com/g67277/MiU/tree/gh-pages/Shuqair_Nazir_Project3/Bronze"><div data-role="button">Bronze Link</div></a>
+                    
                 </div>
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Development</h3>
                     <p>Future development will include targeting and displaying specific meetings when selecting one of the categories</p>
                 </div>
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>About Me</h3>
                     <p>Nazir Shuqair</p>
                     <p>22 years old, Work as a Desktop Support Specialiest with the navy while attending FullSail. Loving MiU!!</p>
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -121,7 +122,8 @@
         </div>
     </div>
     <div data-role="page" id="current" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
+        	<img border="0" src="img/brand-logo.gif" class="logo" style="float:none;display:inline"/>
             <h1>Most Current</h1>
         </div>
         <div data-role="content" data-content-theme="a">
@@ -153,7 +155,7 @@
                 </li>
             </ul>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -167,20 +169,21 @@
         </div>
     </div>
     <div data-role="page" id="usVid" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
+        	<img border="0" src="img/brand-logo.gif" class="logo" style="float:none;display:inline"/>
             <h1>USAMTIC Video Bridge</h1>
         </div>
         <div data-role="content">
             <p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure video teleconferencing</p>
             <div data-role="collapsible-set">
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Schedule a Call</h3>
                     <div data-role="button"><a href="#additem">USAMTIC Video</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -194,20 +197,21 @@
         </div>
     </div>
     <div data-role="page" id="tmVid" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
+        
             <h1>USAMTIC Video Bridge</h1>
         </div>
         <div data-role="content">
             <p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
             <div data-role="collapsible-set">
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Schedule a Call</h3>
                     <div data-role="button"><a href="#additem">TMS Video</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -221,20 +225,20 @@
         </div>
     </div>
     <div data-role="page" id="usAud" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
             <h1>USAMTIC Video Bridge</h1>
         </div>
         <div data-role="content">
             <p>USAMTIC is a bridge managed by the army providing top tier secure/unsecure audio teleconferencing</p>
             <div data-role="collapsible-set">
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Schedule a Call</h3>
                     <div data-role="button"><a href="#additem">USAMTIC Audio</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -248,20 +252,20 @@
         </div>
     </div>
     <div data-role="page" id="tmAud" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
             <h1>USAMTIC Video Bridge</h1>
         </div>
         <div data-role="content">
             <p>TMS is a Cisco teleconferencing system approved for use within the DoD</p>
             <div data-role="collapsible-set">
-                <div data-role="collapsible" data-collapsed="true" data-theme="d">
+                <div data-role="collapsible" data-collapsed="true" data-theme="a">
                     <h3>Schedule a Call</h3>
                     <div data-role="button"><a href="#additem">TMS Audio</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
@@ -275,7 +279,7 @@
         </div>
     </div>
     <div data-role="page" id="additem" data-add-back-btn="true">
-        <div data-role="header" data-theme="e">
+        <div data-role="header" data-theme="a">
             <h1>VTC Line-Up</h1>
             <div style="text-align:right; font-size:10px; color:#666; font-family:Helvetica,Arial,sans-serif">
     			<p>Fields with * are required</p>
@@ -349,12 +353,12 @@
                     <textarea></textarea>
                 </div>
 
-                <input type="submit" data-inline="true" value="submit" data-theme="e" />
+                <input type="submit" data-inline="true" value="submit" data-theme="a" />
                 <input type="reset" data-inline="true" value="reset" data-theme="a" data-mini="true" id="resetBtn" />
 
             </form>
         </div>
-        <div data-role="footer" data-position="fixed" data-theme="e" data-id="main">
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="main">
             <div data-role="navbar">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a>
