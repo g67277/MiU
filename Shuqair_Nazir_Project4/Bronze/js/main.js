@@ -1,8 +1,8 @@
 // JavaScript Document
 // Nazir Shuqair
 //	MiU 1310
-//	17 OCT 2013
-//	Project 3
+//	24 OCT 2013
+//	Project 4
 window.addEventListener("DOMContentLoaded", function () {
     //alert(localStorage.value(0));
     //getElementByID function
@@ -249,7 +249,6 @@ window.addEventListener("DOMContentLoaded", function () {
                 radios[i].setAttribute("checked", "checked");
             }
         }
-		alert(item.checkb[1]);
         if (item.checkb[1] == "vip") {
             get('vip').setAttribute("checked", "checked");
         }

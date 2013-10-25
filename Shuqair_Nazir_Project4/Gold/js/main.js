@@ -1,7 +1,8 @@
+// JavaScript Document
 // Nazir Shuqair
 //	MiU 1310
-//	17 OCT 2013
-//	Project 3
+//	24 OCT 2013
+//	Project 4
 
 $('#home').on('pageinit', function(){
 	//code needed for home page goes here
